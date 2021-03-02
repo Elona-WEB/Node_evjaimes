@@ -63,7 +63,7 @@ const getFileContent = (fil, callback) => {
 
 http
   .createServer((req, res) => {
-    if ((req.url = "/api/proveedores")) {
+    if (req.url == "/api/proveedores") {
       const axios1 = require("axios");
       axios1
         .get(URL)
@@ -78,7 +78,7 @@ http
         res.end(data);
       });
     }
-    if ((req.url = "/api/clientes")) {
+    if (req.url == "/api/clientes") {
       const axios2 = require("axios");
       axios2
         .get(URL2)
